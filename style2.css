@@ -1,0 +1,107 @@
+@font-face {
+  font-family: Quando;
+  src: url("https://cdn.glitch.global/46bfdec8-b33b-4d33-a733-c26bf54b68d9/Quando-Regular.ttf?v=1716570796848")
+    format("truetype");
+}
+
+@font-face {
+  font-family: ABC;
+  src: url("https://cdn.glitch.global/46bfdec8-b33b-4d33-a733-c26bf54b68d9/Lack-Regular.otf?v=1716572864096")
+    format("truetype");
+}
+
+
+*{margin: 0;
+font-family: Quando;
+}
+
+body {
+  background:#E3C9BE;
+  color:#393134;
+}
+
+#button{
+
+  -moz-transform:    scaleX(-1); /* Gecko */
+  -o-transform:      scaleX(-1); /* Opera */
+  -webkit-transform: scaleX(-1); /* Webkit */
+  transform:         scaleX(-1); /* Standard */
+  padding:0px;
+  margin-left:1.5vw;
+  display: inline;
+  font-size:48px;
+  position: absolute;
+
+  -webkit-text-stroke: 2px #A0051A;
+  text-stroke: 2px #A0051A;
+  transition: 0.3s;
+}
+#bcover{
+
+  
+  padding:23px;
+  margin-left:1.5vw;
+  display: inline;
+
+  position: absolute;
+
+  -webkit-text-stroke: 2px #A0051A;
+  text-stroke: 2px #A0051A;
+  transition: 0.3s;
+  z-index:1;
+}
+#bcover:hover {  
+cursor:grab;}
+
+#bcover:active {  
+cursor:grabbing;}
+#bcover:hover + #button {
+   -moz-transform:   rotate(-90deg); /* Gecko */
+  -o-transform:      rotate(-90deg); /* Opera */
+  -webkit-transform: rotate(-90deg); /* Webkit */
+  transform:         rotate(-90deg); /* Standard */
+
+  
+}
+
+h1 {
+  font-family: Quando;
+  background-color:white;
+  color:#E3C9BE;
+   -webkit-text-stroke: 1.5px #A0051A;
+  text-stroke: 1.5px #A0051A;
+padding-left:5px;
+ 
+  margin:50px;
+   margin-left: 14vw;
+margin-bottom: 20px;
+  font-size:48px;
+
+}
+
+#subtext {
+  padding-left:5px;
+   color:#E3C9BE;
+ background-color:white;
+  margin-right:50px;
+  margin-left: 14vw;
+  margin-bottom: 50px;
+ 
+}
+#text{
+  
+  margin:20px;
+  font-size:16px;
+
+   
+    }
+
+
+
+@media only screen and (min-width: 768px) {
+  #text, h1, #subtext{
+    margin-left: 12.5vw;
+  }
+  #button, #bcover{
+    margin-left: 4vw;
+}

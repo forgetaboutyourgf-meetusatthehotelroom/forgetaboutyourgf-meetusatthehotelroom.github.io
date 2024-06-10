@@ -1,0 +1,113 @@
+@font-face {
+  font-family: Quando;
+  src: url("https://cdn.glitch.global/46bfdec8-b33b-4d33-a733-c26bf54b68d9/Quando-Regular.ttf?v=1716570796848")
+    format("truetype");
+}
+
+@font-face {
+  font-family: ABC;
+  src: url("https://cdn.glitch.global/46bfdec8-b33b-4d33-a733-c26bf54b68d9/Lack-Regular.otf?v=1716572864096")
+    format("truetype");
+}
+
+
+*{margin: 0;
+font-family: Quando;
+}
+
+body {
+  background:#E3C9BE;
+  color:#393134;
+}
+
+#shadow{
+ top:0vh;
+width:100%;
+  height: 100vh;
+  z-index:-1;
+  position: absolute;
+   background: radial-gradient(closest-side, #393134 15%, transparent 102%);
+}
+
+#ttl {
+  top:0px;
+ position: fixed;
+  font-family: Quando;
+ 
+  color: #E3C9BE;
+
+ text-shadow: #C00417 0px 0px 10px ;
+ /* text-shadow: #393134 0px 0px 200px, #393134 0px 0px 70px;*/
+  margin:50px;
+  z-index:-2;
+   margin-left: 15vw;
+
+  font-size:48px;
+}
+
+#sectitl{
+  font-family: Quando;
+  color: #E3C9BE;
+
+ text-shadow: #393134 0px 0px 5px;
+ /* text-shadow: #393134 0px 0px 200px, #393134 0px 0px 70px;*/
+  margin:50px;
+   margin-left: 15vw;
+margin-bottom: 100px;
+  font-size:48px;
+  z-index:2;
+}
+
+
+#subtext {
+  text-align: center;
+padding-top:150px;
+  padding-bottom: 200px;
+  margin-bottom: 0;
+  background:#E3C9BE;
+ box-shadow: 0px -10px 60px 70px #E3C9BE;
+}
+footer{
+    text-align: center;
+  font-size: 10px;
+}
+#text{
+  
+  margin:20px;
+  font-size:16px;
+}
+.hide {
+  display: none;
+  color: #C00417;
+}
+
+a:hover + .hide {
+  display: inline;
+}
+
+a:link {
+  color: #393134;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #393134;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+  color: #C00417;
+  background-color: transparent;
+  text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+   h1{
+     text-shadow: #393134 0px 0px 200px, #393134 0px 0px 70px;
+     margin-right: 15vw;
+     font-size: 14vw;}
+  #subtext {
+    font-size: 25px;
+  }
+  }
